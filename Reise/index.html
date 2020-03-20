@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reise -- Welcome</title>
+  </head>
+
+  <script>
+    function openMenu() {
+      document.getElementById("log").style.display = "none";
+      document.getElementById("icon").style.display = "none";
+      document.getElementById("line").style.display = "none";
+      document.getElementById("menu").style.display = "block";
+      document.getElementById("close").style.display = "block";
+      document.getElementById("menu").style.margin = "auto";
+    }
+
+    function closeMenu() {
+      document.getElementById("log").style.display = "block";
+      document.getElementById("icon").style.display = "block";
+      document.getElementById("line").style.display = "none";
+      document.getElementById("menu").style.display = "none";
+      document.getElementById("close").style.display = "none";
+    }
+
+    function openLogin() {
+      alert("comming soon!");
+    }
+  </script>
+
+  <body>
+    <div class="main">
+      <div class="nav">
+        <ul>
+          <li class="logo" id="log">
+            <a href="#"><h1>Reise</h1></a>
+          </li>
+          <li class="ham" id="icon" onclick="openMenu()">
+            <ion-icon name="menu-outline"></ion-icon>
+          </li>
+          <div class="links" id="menu">
+            <li class="close" id="close" onclick="closeMenu()">
+              <h2>&times; Close</h2>
+            </li>
+            <li>
+              <a href="#sec-1"><h2>What's new?</h2></a>
+            </li>
+            <li>
+              <a href="#sec-2"><h2>Destinations</h2></a>
+            </li>
+            <li>
+              <a href="#sec-3"><h2>About us</h2></a>
+            </li>
+            <li id="line">
+              <h2>|</h2>
+            </li>
+            <li>
+              <a href="#" onclick="openLogin()"><h2>Login</h2></a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <!-- Added This -->
+
+      <!-- Main section body -->
+      <div class="main-container">
+        <div class="line-container">
+          <h1>Let's make Your Best Trip Ever.</h1>
+          <p>
+            Reise is the easiest place for planning your trips. <br />You pick
+            the location and we make a schedule for<br />
+            you accordingly.
+          </p>
+          <img
+            class="store"
+            src="/images/download-on-the-app-store-apple.svg"
+            alt="Apple store logo"
+          />
+          <img
+            class="store"
+            src="/images/google-play-download-android-app.svg"
+            alt="Play store logo"
+          />
+        </div>
+
+        <div class="image-container">
+          <img
+            src="/images/undraw_Mobile_application.svg"
+            alt="Smart phone Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Slide -->
+    <div class="second-slide" id="sec-1">
+      <center><h2>What’s new?</h2></center>
+      <center>
+        <p>
+          We went through a lot of Travel apps, and were unable to find the best
+          in all cases we put forth. Hence we decided to create our own Travel
+          companion.
+        </p>
+      </center>
+
+      <div class="difference">
+        <ol>
+          <li><h3>Travel Applications</h3></li>
+          <li><p>1. Google Travels.</p></li>
+          <li><p>2. Tripit.</p></li>
+          <li><p>3. Road trippers.</p></li>
+          <li><p>4. Kayak.</p></li>
+        </ol>
+
+        <ol>
+          <li><h3>Travel Companion</h3></li>
+          <li><p>1. Airbnb.</p></li>
+          <li><p>2. Crouchsurfing.</p></li>
+          <li><p>3. Meetup.</p></li>
+          <li><p>4. FliptheTrip.</p></li>
+        </ol>
+      </div>
+      <center>
+        <p>
+          A Travel companion allows you a companion physically, A Travel app
+          lets you plan the trip o your device. Thus our app is a merger i
+          wanted to provide a companion in your smartphone.
+        </p>
+      </center>
+    </div>
+
+    <!-- Third Slide -->
+    <div class="third-slide" id="sec-2">
+      <center><h2>Destinations...</h2></center>
+      <center><p>We are so far avilable in the city of Hyderabad.</p></center>
+      <div class="section">
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/Charminar-Pride_of_Hyderabad.jpg"
+            alt="Charminar"
+          />
+          <center>
+            <h3>Charminar</h3>
+            <p style="color: red;">Friday Closed</p>
+          </center>
+        </div>
+
+        <div class="card">
+          <center>
+            <img
+              class="card-img"
+              src="/images/Makkah_Masjid,_Hydrabad_-_മക്കാ_മസ്ജിദ്,_ഹൈദരാബാദ്_01.jpg"
+              alt="Makkah Masjid"
+            />
+          </center>
+          <center>
+            <h3>Makkah Masjid</h3>
+            <p style="color: red;">Open all Day</p>
+          </center>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/Chowmahalla_Palace_01.jpg"
+            alt="Chowmahallah Palace"
+          />
+          <center>
+            <h3>Chowmahallah Palace</h3>
+            <p style="color: red;">Friday Closed</p>
+          </center>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/Salar_jung_museum_hyderabad.jpg"
+            alt="Salar Jung Museum"
+          />
+          <center>
+            <h3>Salar Jung Museum</h3>
+            <p style="color: red;">Friday Closed</p>
+          </center>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/central-liberary.jpg"
+            alt="Afzalgunj Liberary"
+          />
+          <center>
+            <h3>Afzalgunj Liberary</h3>
+            <p style="color: red;">Thursday Closed</p>
+          </center>
+        </div>
+      </div>
+    </div>
+    <!-- Final Section -->
+    <div class="final-section" id="sec-3">
+      <center><h2>About us</h2></center>
+      <center>
+        <p>
+          We are students of MJCET in Hyderabad. This is our final year project
+          hope you enjoy it.
+        </p>
+      </center>
+
+      <div class="hello">
+        <div class="card-profile">
+          <img
+            class="profile-img"
+            src="/images/avatar (2).png"
+            alt="Godfather99999's Photo"
+          />
+          <h3>Godfather99999</h3>
+        </div>
+
+        <div class="card-profile">
+          <img
+            class="profile-img"
+            src="/images/avatar (2).png"
+            alt="GNRL /// SAMEER's Photo"
+          />
+          <h3>GNRL /// SAMEER</h3>
+        </div>
+
+        <div class="card-profile">
+          <img
+            class="profile-img"
+            src="/images/avatar (2).png"
+            alt="MrGeneralRFK's Photo"
+          />
+          <h3>MrGeneralRFK</h3>
+        </div>
+      </div>
+      <div class="footer">
+        <center><p>Follow us on : Twitter Facebook Instagram</p></center>
+        <center><p>Get the resources from : Github</p></center>
+        <center><p>To contact us : reise@somemail.com</p></center>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>
