@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+p,
+li {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style: none;
+}
+
+.ham {
+  display: none;
+}
+
+.main {
+  display: block;
+  background-color: #ffc045;
+}
+
+.close {
+  display: none;
+}
+
+.logo {
+  font-size: 24px;
+  padding: 20px;
+  margin-left: 16px;
+}
+
+.links {
+  display: flex;
+}
+
+.links li {
+  font-size: 18px;
+  padding: 20px;
+  margin-left: 10px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Main conatiner */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10vh;
+  background-color: #ffc405;
+}
+
+.store {
+  padding: 1rem;
+  height: 4rem;
+}
+
+.line-container h1 {
+  font-size: 4rem;
+  padding-bottom: 1.8rem;
+}
+
+.line-container p {
+  font-size: 30px;
+  padding-bottom: 12px;
+}
+
+.image-container img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Second slide  */
+.second-slide {
+  background-color: #fafcb5;
+  padding: 20px;
+}
+
+.second-slide h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+.second-slide h3 {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.second-slide p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.difference {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* Third slide */
+.third-slide {
+  align-items: center;
+  margin: 30px;
+}
+
+.third-slide h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+.third-slide p {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+}
+
+.card {
+  border: 1px solid #d3d3d3;
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.card-img {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 400px;
+  margin: 10px;
+}
+
+/* Fourth section */
+
+.final-section {
+  background-color: #e1e1ed;
+}
+
+.final-section h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+.final-section p {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.final-section h3 {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.card-profile {
+  margin: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 30px;
+}
+
+.card-profile:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.profile-img {
+  border: 1px solid #d3d3d3;
+  height: 400px;
+  border-radius: 200px;
+}
+
+.hello {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 30px;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.footer p {
+  padding: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main h1 {
+    font-size: 4rem;
+  }
+
+  .main p {
+    font-size: 1.5rem;
+  }
+
+  .ham {
+    padding: 20px;
+    margin-right: 1rem;
+    display: block;
+  }
+
+  ion-icon {
+    font-size: 48px;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  .main-container {
+    flex-wrap: wrap;
+    margin-top: 3vh;
+    padding: 5vh;
+  }
+
+  .image-container img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .third-slide p {
+    font-size: 1.3rem;
+  }
+
+  .second-slide p {
+    font-size: 1.3rem;
+  }
+
+  .final-section p {
+    font-size: 1.3rem;
+  }
+
+  .footer p {
+    font-size: 1.3rem;
+  }
+  .links {
+    display: none;
+  }
+
+  .store {
+    padding: 1vh 3vh 1vh 0;
+    height: 3rem;
+  }
+
+  .profile-img {
+    width: 300px;
+  }
+
+  .card-img {
+    width: 300px;
+  }
+}
