@@ -241,7 +241,6 @@ li {
   .links a {
     align-items: center;
     padding-top: 10px;
-    margin-left: 20px;
   }
 
   .ham {
@@ -260,8 +259,7 @@ li {
 
   .main-container {
     flex-wrap: wrap;
-    margin-top: 10vh;
-    padding: 5vh;
+    padding: 15vh 10vw;
   }
 
   .image-container img {
