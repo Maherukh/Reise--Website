@@ -40,30 +40,41 @@ li {
 
 .logo {
   font-size: 24px;
-  padding: 20px;
-  margin-left: 16px;
 }
 
 .links {
+  width: 50vw;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .links li {
-  font-size: 18px;
-  padding: 20px;
-  margin-left: 10px;
+  font-size: 16px;
+  padding: 0px 10px;
 }
+
 .nav ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  background-color: #ffc405;
+  top: 0;
+  padding-left: 15px;
+  z-index: 9999;
 }
 
 /* Main conatiner */
 .main-container {
   display: flex;
-  justify-content: space-between;
-  padding: 10vh;
+  align-items: center;
+  justify-content: space-around;
   background-color: #ffc405;
+  padding: 15vh 10vw;
 }
 
 .store {
@@ -73,7 +84,7 @@ li {
 
 .line-container h1 {
   font-size: 4rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.8rem;
 }
 
 .line-container p {
@@ -218,13 +229,19 @@ li {
   padding: 0;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
   .main h1 {
     font-size: 4rem;
   }
 
   .main p {
     font-size: 1.5rem;
+  }
+
+  .links a {
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 20px;
   }
 
   .ham {
@@ -243,9 +260,15 @@ li {
 
   .main-container {
     flex-wrap: wrap;
-    margin-top: 3vh;
+    margin-top: 10vh;
     padding: 5vh;
   }
+
+  .image-container img {
+    height: auto;
+    max-width: 100%;
+  }
+
   h2 {
     font-size: 1.8rem;
   }
